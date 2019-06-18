@@ -3,7 +3,8 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    ecmaFeatures: { legacyDecorators: true },
   },
   env: {
     browser: true,
@@ -41,6 +42,8 @@ module.exports = {
         'e' // for e.returnvalue
       ]
     }],
+    'object-curly-newline': 'off',
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'comma-dangle': 'off',
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {

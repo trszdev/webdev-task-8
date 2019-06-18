@@ -39,8 +39,8 @@ export default class PigSpeech extends Vue {
 
   updatePhrase() {
     const needsAttention = this.pig.state !== pigstate.DEAD && this.needsAttention
-    this.phrase = _.sample(this.phrases.concat(needsAttention ?
-      ['посмотри на меня!', 'мне плохо...', 'тебе на меня наплевать :\'('] : []))
+    this.phrase = _.sample(this.phrases.concat(needsAttention
+      ? ['посмотри на меня!', 'мне плохо...', 'тебе на меня наплевать :\'('] : []))
     if (speechSynthesis && !this.isTalking) {
       this.isTalking = true
       const utterance = new SpeechSynthesisUtterance(this.phrase)

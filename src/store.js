@@ -55,9 +55,9 @@ const actions = {
     fat = clamp2(fat, pstate === pigstate.EATING ? -0.0023 : 0.0001)
     energy = clamp2(energy, pstate === pigstate.SLEEPING ? -0.0004 : 0.000002)
     mood = clamp2(mood, pstate === pigstate.LISTENING ? -0.01 : 0.0001)
-    if ((fat === 100 && pstate === pigstate.EATING) ||
-      (energy === 100 && pstate === pigstate.SLEEPING) ||
-      (mood === 100 && pstate === pigstate.LISTENING)
+    if ((fat === 100 && pstate === pigstate.EATING)
+      || (energy === 100 && pstate === pigstate.SLEEPING)
+      || (mood === 100 && pstate === pigstate.LISTENING)
     ) {
       pstate = pigstate.IDLE
     }
