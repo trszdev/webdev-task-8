@@ -6,7 +6,7 @@ import camelCase from 'lodash/camelCase'
 import BootstrapVue from 'bootstrap-vue'
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 import * as icons from '@fortawesome/fontawesome-free-solid'
-import 'bootstrap/dist/css/bootstrap.css' // eslint-disable-line
+import 'bootstrap/dist/css/bootstrap.css'
 import 'animate.css/animate.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import pigstate from './pigstate'
